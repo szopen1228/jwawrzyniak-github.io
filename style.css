@@ -1,0 +1,138 @@
+html
+{
+  scroll-behavior: smooth;
+}
+
+body
+{
+  background-color: #000;
+  margin: 0;
+}
+
+section
+{
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
+.content
+{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.baner
+{
+  background: url(img/background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.baner img
+{
+  position: absolute;
+  height: 70vh;
+  right: 10%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.baner_text
+{
+  position: absolute;
+  font-family: Montserrat;
+  color: #fff;
+  font-weight: bold;
+  text-shadow: 5px 5px 10px black;
+  width: 60%;
+  font-size: 5vw;
+  text-align: right;
+  height: 40%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.baner_text p
+{
+  margin: 0;
+  font-family: Roboto;
+  font-size: 3vw;
+  color: #ffcc00;
+}
+
+.social
+{
+  display: block;
+  position: absolute;
+  color: #ffcc00;
+  width: 5%;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.social i
+{
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.social a
+{
+  font-size: 36px;
+  color: #ffcc00;
+  text-decoration: none;
+  opacity: 0.5;
+  transition: 1.5s;
+}
+
+.social a:hover
+{
+  opacity: 1;
+}
+
+.iconscroll, .iconscroll :before
+{
+  display: block;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  -ms-transform: translate(-50%;);
+}
+
+.iconscroll
+{
+  width: 60px;
+  height: 60px;
+  top: 75%;
+  box-shadow: inset 0 0 0 2px #fff;
+  border-radius: 60px;
+}
+
+.scrollarrow
+{
+  display: block;
+  position: absolute;
+  height: 15px;
+  left: 50%;
+  top: .4em;
+  margin-left: 13px;
+  border-radius: 50%;
+}
+
+.scrollarrow img
+{
+  width: 27px;
+  height: 15px;
+  animation: scrollarrow_ 1.5s ease-out infinite;
+}
+
+@keyframes scrollarrow_
+{
+  0%   { transform: translateY(.30em); opacity: 1; }
+  25%  { transform: translateY(.90em); opacity: 1; }
+  75%  { opacity: 1; }
+  100% { transform: translateY(.30em); opacity: 1; }
+}

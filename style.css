@@ -54,12 +54,13 @@ section
   transform: translateY(-50%);
 }
 
-.baner_text p
+.baner_text h1
 {
   margin: 0;
   font-family: Roboto;
   font-size: 3vw;
   color: #ffcc00;
+  cursor: default;
 }
 
 .social
@@ -91,6 +92,40 @@ section
 .social a:hover
 {
   opacity: 1;
+}
+
+.about
+{
+  background-color: #222;
+}
+
+.about_text h1
+{
+  position: absolute;
+  font-family: Montserrat;
+  color: #ffcc00;
+  font-size: 10vw;
+  margin: 0;
+  margin-right: 100px;
+  right: 0;
+  cursor: default;
+}
+
+.about_text h2
+{
+  position: absolute;
+  font-family: Montserrat;
+  color: #ffcc00;
+  font-size: 8vw;
+  margin: 0;
+  margin-right: 60px;
+  margin-top: 60px;
+  right: 0;
+  -webkit-text-fill-color: rgba(0, 0, 0, 0);
+  -webkit-text-stroke-width: 0.1px;
+  -webkit-text-stroke-color: #ffcc00;
+  opacity: 0.3;
+  cursor: default;
 }
 
 .iconscroll, .iconscroll :before
@@ -135,4 +170,102 @@ section
   25%  { transform: translateY(.90em); opacity: 1; }
   75%  { opacity: 1; }
   100% { transform: translateY(.30em); opacity: 1; }
+}
+
+#navbar
+{
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  left: -100px;
+  width: 100px;
+  height: 100%;
+  display: block;
+  z-index: 1;
+  overflow-x: hidden;
+  transition: 0.5s;
+  transition-delay: 0.5s;
+}
+
+#navbar:hover
+{
+  width: 350px;
+  transition: 0.5s;
+  transition-delay: 0.5s;
+}
+
+.buttons a
+{
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  padding: 25px 20px 25px 20px;
+  font-size: 50px;
+  width: 350px;
+  transition: 0.5s;
+}
+
+.buttons a:hover
+{
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #ffcc00;
+  transition: 0.5s;
+  width: 350px;
+}
+
+#navbar p
+{
+  display: inline-block;
+  font-family: Montserrat;
+  font-size: 30px;
+  padding-top: 12px;
+  position: absolute;
+  margin: 0;
+  padding-left: 50px;
+}
+
+#navbar_img
+{
+  position: absolute;
+  width: 150px;
+  margin: auto;
+  top: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: 0.5s;
+  transition-delay: 0.5s;
+}
+
+#navbar_social
+{
+  position: absolute;
+  width: 350px;
+  left: 75.625px;
+  bottom: 0;
+  opacity: 0;
+  transition: 0.5s;
+  transition-delay: 0.5s;
+}
+
+#navbar_social a
+{
+  display: inline-block;
+  font-size: 30px;
+  color: white;
+  padding: 20px;
+  transition: 0.5s;
+}
+
+#navbar_social a:hover
+{
+  color: #ffcc00;
+  padding: 20px;
+  transition: 0.5s;
+}
+
+.buttons
+{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
 }

@@ -6,27 +6,51 @@
     <link rel="icon" href="img/logo_white.png">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
     <title>Jakub Wawrzyniak</title>
   </head>
   <body>
+    <div id="navbar" onmouseover="opacity(), opacity_logo()" onmouseout="opacity2(), opacity_logo2()">
+      <img id="navbar_img" src="img/logo_white.png">
+      <div id="navbar_social">
+      <a href="https://www.facebook.com/kuba.wawrzyniak.562"><i class="fab fa-facebook-square"></i></a>
+      <a href="https://www.instagram.com/w4wrzyn_"><i class="fab fa-instagram"></i></a>
+      <a href="mailto:kubawawrzyniak123@gmail.com"><i class="fas fa-envelope-square"></i></a>
+      </div>
+      <div class="buttons">
+      <a href="#baner"><i class="fas fa-home"><p>HOME</p></i></a>
+      <a href="#about"><i class="fas fa-info" style="padding:0px 18px 0px 18px;"></i><p>ABOUT ME</p></a>
+      <a href="#contact"><i class="fas fa-paint-brush"></i><p>PORTFOLIO</p></a>
+      <a href="#contact"><i class="fas fa-id-card-alt"></i><p>CONTACT</p></a>
+    </div>
+    </div>
+
     <div class="content">
     <section class="baner" id="baner">
       <img src="img/baner.png">
       <div class="baner_text">
         JAKUB WAWRZYNIAK</br>
-        <p>GRAPHIC DESIGNER</p>
+        <h1>GRAPHIC DESIGNER</h1>
       </div>
       <div class="social">
-      <a href="https://www.facebook.com/kuba.wawrzyniak.562"><i class="fa fa-facebook-square" style="font-size:36px"></i></a></br>
-      <a href="https://www.instagram.com/w4wrzyn_"><i class="fa fa-instagram" style="font-size:36px"></i></a></br>
-      <a href="mailto:kubawawrzyniak123@gmail.com"><i class="fa fa-telegram" style="font-size:32px"></i></a>
+      <a href="https://www.facebook.com/kuba.wawrzyniak.562"><i class="fab fa-facebook-square"></i></a></br>
+      <a href="https://www.instagram.com/w4wrzyn_"><i class="fab fa-instagram"></i></a></br>
+      <a href="mailto:kubawawrzyniak123@gmail.com"><i class="fas fa-envelope-square"></i></a>
     </div>
       <a href="#about"><span class="iconscroll">
     <span class="scrollarrow"><img src="img/arrow.png"></span>
     </span></a>
     </section>
     <section class="about" id="about">
+      <div class="about_text" onselectstart="return false;">
+        <h1>O MNIE</h1>
+        <h2>O MNIE</h2>
+        <script>
+		ScrollReveal().reveal('.about_text', { delay: 500 });
+	</script>
+      </div>
     </section>
   </div>
   </body>

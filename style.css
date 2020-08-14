@@ -1,7 +1,8 @@
 html
 {
   scroll-behavior: smooth;
-  min-width: 1050px;
+  min-width: 1250px;
+  min-height: 750px;
 }
 
 body
@@ -144,10 +145,11 @@ section
   position: absolute;
   font-family: Montserrat;
   text-align: right;
+  font-size: 1vw;
   margin-right: 100px;
   margin-left: 100px;
   padding: 60px 35px 60px 35px;
-  max-width: 800px;
+  width: 60vw;
   right: 0;
   top: 140%;
   color: white;
@@ -173,11 +175,10 @@ section
   font-family: Montserrat;
   margin-right: 100px;
   margin-left: 200px;
-  margin-bottom: 5%;
   padding: 35px 35px 35px 35px;
   max-width: 900px;
   left: 0;
-  top: 215%;
+  top: 212%;
   color: white;
   background: rgba(0, 0, 0, 0.5);
   border: 5px solid rgba(255, 204, 0, 0.5);
@@ -223,6 +224,7 @@ section
 .pictures
 {
   display: inline-block;
+  cursor: pointer;
   margin: 10px 0px 10px 0px;
   width: 200px;
   height: 200px;
@@ -237,6 +239,40 @@ section
   border: 5px solid #ffcc00;
   opacity: 1;
   transition: 0.5s;
+}
+
+.contact
+{
+  background-color: #222;
+}
+
+.contact h1
+{
+  position: absolute;
+  font-family: Montserrat;
+  color: #ffcc00;
+  font-size: 10vw;
+  margin: 0;
+  margin-right: 100px;
+  right: 0;
+  cursor: default;
+}
+
+.contact h2
+{
+  position: absolute;
+  font-family: Montserrat;
+  color: #ffcc00;
+  font-size: 8vw;
+  margin: 0;
+  margin-right: 60px;
+  margin-top: 60px;
+  right: 0;
+  -webkit-text-fill-color: rgba(0, 0, 0, 0);
+  -webkit-text-stroke-width: 0.1px;
+  -webkit-text-stroke-color: #ffcc00;
+  opacity: 0.3;
+  cursor: default;
 }
 
 .iconscroll, .iconscroll :before

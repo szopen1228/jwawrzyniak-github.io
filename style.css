@@ -1,52 +1,32 @@
-html
-{
-  scroll-behavior: smooth;
-  min-width: 1250px;
-  min-height: 750px;
+* {
+  box-sizing: border-box;
 }
 
-body
-{
-  background-color: #000;
-  margin: 0;
-}
-
-body ::selection
-{
+*::selection {
   background-color: #ffcc00;
 }
 
-section
-{
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  scroll-behavior: smooth;
+}
+
+section {
   display: block;
   height: 100%;
   width: 100%;
 }
 
-.content
-{
+.content{
   position: absolute;
   width: 100%;
   height: 100%;
 }
 
-.baner
-{
-  background: url(img/background.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.baner img
-{
-  position: absolute;
-  height: 70vh;
-  right: 10%;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-.baner_text
+.home_text
 {
   position: absolute;
   font-family: Montserrat;
@@ -57,11 +37,13 @@ section
   font-size: 5vw;
   text-align: right;
   height: 40%;
-  top: 50%;
+  margin-right: 100px;
+  right: 0;
+  top: 90%;
   transform: translateY(-50%);
 }
 
-.baner_text h1
+.home_text h1
 {
   margin: 0;
   font-family: Roboto;
@@ -101,407 +83,176 @@ section
   opacity: 1;
 }
 
-.about
-{
-  background-color: #222;
-  background-image: url(img/about.png);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-blend-mode: overlay;
+.about {
+  background-color: #555;
 }
 
-.about h1
-{
-  position: absolute;
-  font-family: Montserrat;
-  color: #ffcc00;
-  font-size: 10vw;
-  margin: 0;
-  margin-right: 100px;
-  right: 0;
-  cursor: default;
-}
-
-.about h2
-{
-  position: absolute;
-  font-family: Montserrat;
-  color: #ffcc00;
-  font-size: 8vw;
-  margin: 0;
-  margin-right: 60px;
-  margin-top: 60px;
-  right: 0;
-  -webkit-text-fill-color: rgba(0, 0, 0, 0);
-  -webkit-text-stroke-width: 0.1px;
-  -webkit-text-stroke-color: #ffcc00;
-  opacity: 0.3;
-  cursor: default;
-}
-
-.about p
-{
-  position: absolute;
-  font-family: Montserrat;
-  text-align: right;
-  font-size: 1vw;
-  margin-right: 100px;
-  margin-left: 100px;
-  padding: 60px 35px 60px 35px;
-  width: 60vw;
-  right: 0;
-  top: 140%;
-  color: white;
-  background: rgba(0, 0, 0, 0.5);
-  border: 5px solid rgba(255, 204, 0, 0.5);
-  border-radius: 25px;
-}
-
-.portfolio
-{
-  background-color: #222;
-  background-image: url(img/portfolio.png);
-  background-position: right;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-blend-mode: overlay;
-}
-
-.portfolio_text
-{
-  display: block;
-  position: absolute;
-  font-family: Montserrat;
-  margin-right: 100px;
-  margin-left: 200px;
-  padding: 35px 35px 35px 35px;
-  max-width: 900px;
-  left: 0;
-  top: 212%;
-  color: white;
-  background: rgba(0, 0, 0, 0.5);
-  border: 5px solid rgba(255, 204, 0, 0.5);
-  border-radius: 25px;
-}
-
-.portfolio_text p
-{
-  font-size: 30px;
-  margin: 0;
-  border-bottom: 3px solid #ffcc00;
-}
-
-.portfolio h1
-{
-  position: absolute;
-  font-family: Montserrat;
-  color: #ffcc00;
-  font-size: 10vw;
-  margin: 0;
-  margin-right: 100px;
-  right: 0;
-  cursor: default;
-}
-
-.portfolio h2
-{
-  position: absolute;
-  font-family: Montserrat;
-  color: #ffcc00;
-  font-size: 8vw;
-  margin: 0;
-  margin-right: 60px;
-  margin-top: 60px;
-  right: 0;
-  -webkit-text-fill-color: rgba(0, 0, 0, 0);
-  -webkit-text-stroke-width: 0.1px;
-  -webkit-text-stroke-color: #ffcc00;
-  opacity: 0.3;
-  cursor: default;
-}
-
-.pictures
-{
-  display: inline-block;
-  cursor: pointer;
-  margin: 10px 0px 10px 0px;
-  width: 200px;
-  height: 200px;
+#myVideo {
   object-fit: cover;
-  border: 5px solid #000;
-  opacity: 0.6;
-  transition: 0.5s;
-}
-
-.pictures:hover
-{
-  border: 5px solid #ffcc00;
-  opacity: 1;
-  transition: 0.5s;
-}
-
-.contact
-{
-  background-color: #222;
-}
-
-.contact h1
-{
-  position: absolute;
-  font-family: Montserrat;
-  color: #ffcc00;
-  font-size: 10vw;
-  margin: 0;
-  margin-right: 100px;
   right: 0;
-  cursor: default;
-}
-
-.contact h2
-{
-  position: absolute;
-  font-family: Montserrat;
-  color: #ffcc00;
-  font-size: 8vw;
-  margin: 0;
-  margin-right: 60px;
-  margin-top: 60px;
-  right: 0;
-  -webkit-text-fill-color: rgba(0, 0, 0, 0);
-  -webkit-text-stroke-width: 0.1px;
-  -webkit-text-stroke-color: #ffcc00;
-  opacity: 0.3;
-  cursor: default;
-}
-
-.iconscroll, .iconscroll :before
-{
-  display: block;
-  position: absolute;
-  left: 50%;
-  transform: translate(-50%);
-  -ms-transform: translate(-50%;);
-}
-
-.iconscroll
-{
-  width: 60px;
-  height: 60px;
-  top: 75%;
-  box-shadow: inset 0 0 0 2px #fff;
-  border-radius: 60px;
-}
-
-.scrollarrow
-{
-  display: block;
-  position: absolute;
-  height: 15px;
-  left: 50%;
-  top: .4em;
-  margin-left: 13px;
-  border-radius: 50%;
-}
-
-.scrollarrow img
-{
-  width: 27px;
-  height: 15px;
-  animation: scrollarrow_ 1.5s ease-out infinite;
-}
-
-@keyframes scrollarrow_
-{
-  0%   { transform: translateY(.30em); opacity: 1; }
-  25%  { transform: translateY(.90em); opacity: 1; }
-  75%  { opacity: 1; }
-  100% { transform: translateY(.30em); opacity: 1; }
-}
-
-#navbar
-{
-  background-color: rgba(0, 0, 0, 0.5);
-  position: fixed;
-  left: -100px;
-  width: 100px;
+  bottom: 0;
+  width: 100%;
   height: 100%;
-  display: block;
-  z-index: 1;
-  overflow-x: hidden;
-  transition: 0.5s;
-  transition-delay: 0.5s;
+  z-index: -1;
 }
 
-#navbar:hover
-{
-  width: 350px;
-  transition: 0.5s;
-  transition-delay: 0.5s;
+.navbar {
+  position: fixed;
+  height: 90px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px;
+  z-index: 10;
 }
 
-.buttons a
-{
-  float: left;
-  display: block;
-  color: #f2f2f2;
-  padding: 25px 20px 25px 20px;
-  font-size: 50px;
-  width: 350px;
-  transition: 0.5s;
+.navbar-buttons {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.buttons a:hover
-{
-  background-color: rgba(0, 0, 0, 0.8);
-  color: #ffcc00;
-  transition: 0.5s;
-  width: 350px;
-}
-
-#navbar p
-{
-  display: inline-block;
-  font-family: Montserrat;
-  font-size: 30px;
-  padding-top: 12px;
-  position: absolute;
-  margin: 0;
-  padding-left: 50px;
-}
-
-#navbar_img
-{
-  position: absolute;
-  display: block;
-  width: 150px;
-  margin: auto;
-  top: 15px;
-  left: 50%;
-  transform: translateX(-50%);
+.overlay {
+  position: fixed;
+  background: rgba(0, 0, 0, 0.80);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   opacity: 0;
-  transition: 0.5s;
-  transition-delay: 0.5s;
+  visibility: hidden;
+  transition: opacity .35s, visibility .35s, height .35s;
+  overflow: hidden;
+  z-index: 11;
 }
 
-@media screen and (max-height: 800px) {
-  #navbar_img {
-    display: none;
+.overlay.open {
+  opacity: 1;
+  visibility: visible;
+  height: 100%;
+}
+
+.overlay.open li {
+  animation: fadeInRight .5s ease forwards;
+  animation-delay: .35s;
+}
+.overlay.open li:nth-of-type(2) {
+  animation-delay: .4s;
+}
+.overlay.open li:nth-of-type(3) {
+  animation-delay: .45s;
+}
+.overlay.open li:nth-of-type(4) {
+  animation-delay: .50s;
+}
+
+.overlay nav {
+  position: relative;
+  width: 100%;
+  height: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 70px;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 40px;
+}
+.overlay ul {
+  list-style: none;
+  margin: 0 auto;
+  display: inline-block;
+  position: relative;
+  height: 100%;
+}
+.overlay ul li {
+  display: block;
+  position: relative;
+  opacity: 0;
+  margin-bottom: 60px;
+}
+.overlay ul li a {
+  display: block;
+  position: relative;
+  color: #FFF;
+  text-decoration: none;
+  overflow: hidden;
+}
+
+.overlay ul li a:hover,
+.overlay ul li a:focus,
+.overlay ul li a:active {
+  color: #ffcc00;
+}
+.overlay ul li a:hover:after,
+.overlay ul li a:focus:after,
+.overlay ul li a:active:after {
+  width: 100%;
+  background: #ffcc00;
+}
+
+button:focus {
+  outline: 0;
+}
+
+.logo {
+  transition: transform 0.30s;
+}
+
+.logo:hover {
+  transform: scale(1.3) rotate(360deg);
+}
+
+#close-menu {
+  float: right;
+  margin: 30px 40px 0px 0px;
+}
+
+.open-menu,
+#close-menu,
+.button {
+  cursor: pointer;
+  transition: transform 0.30s;
+}
+
+.open-menu:hover,
+#close-menu:hover,
+.button:hover {
+  transform: scale(1.3) rotate(180deg);
+}
+
+.overlay ul li a:after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 43.5%;
+  width: 0%;
+  transform: translateX(-50%);
+  height: 3px;
+  background: #FFF;
+  transition: .35s;
+}
+
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    left: 20%;
+  }
+  100% {
+    opacity: 1;
+    left: 0;
   }
 }
 
-#navbar_social
-{
-  position: absolute;
-  width: 350px;
-  left: 75.625px;
-  bottom: 0;
-  opacity: 0;
-  transition: 0.5s;
-  transition-delay: 0.5s;
+@media (max-width: 670px) {
+  .overlay nav {
+    font-size: 30px;
+  }
 }
-
-#navbar_social a
-{
-  display: inline-block;
-  font-size: 30px;
-  color: white;
-  padding: 20px;
-  transition: 0.5s;
-}
-
-#navbar_social a:hover
-{
-  color: #ffcc00;
-  padding: 20px;
-  transition: 0.5s;
-}
-
-.buttons
-{
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* The Modal (background) */
-.modal {
-  display: none;
-  position: fixed;
-  z-index: 1;
-  padding-top: 100px;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  background: rgba(0, 0, 0, 0.7);
-}
-
-/* Modal Content */
-.modal-content {
-  position: absolute;
-  left: 50%;
-  padding: 0;
-  max-width: 600px;
-  transform: translateX(-50%);
-}
-
-/* The Close Button */
-.close {
-  color: white;
-  position: absolute;
-  top: 10px;
-  right: 25px;
-  font-size: 35px;
-  font-weight: bold;
-  transition: 0.5s;
-}
-
-.close:hover,
-.close:focus {
-  color: #ffcc00;
-  font-size: 50px;
-  top: 4px;
-  right: 20px;
-  text-decoration: none;
-  cursor: pointer;
-  transform: rotate(180deg);
-  transition: 0.5s;
-}
-
-.mySlides {
-  display: none;
-}
-
-.cursor {
-  cursor: pointer;
-}
-
-img {
-  margin-bottom: -4px;
-}
-
-.demo {
-  opacity: 0.6;
-}
-
-.active,
-.demo:hover {
-  opacity: 1;
+@media (max-width: 550px) {
+  .overlay nav {
+    font-size: 20px;
+  }
 }
